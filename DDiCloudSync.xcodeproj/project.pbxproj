@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4C9EBFF1693734F00095CE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59210C9815429021000B17AC /* Foundation.framework */; };
+		B4C9EC041693734F00095CE4 /* DDiCloudSync.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4C9EC031693734F00095CE4 /* DDiCloudSync.h */; };
+		B4C9EC061693734F00095CE4 /* DDiCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C9EC051693734F00095CE4 /* DDiCloudSync.m */; };
+		B4C9EC0E1693734F00095CE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C9EC0D1693734F00095CE4 /* SenTestingKit.framework */; };
+		B4C9EC0F1693734F00095CE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59210C9615429021000B17AC /* UIKit.framework */; };
+		B4C9EC101693734F00095CE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59210C9815429021000B17AC /* Foundation.framework */; };
+		B4C9EC131693734F00095CE4 /* libDDiCloudSync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C9EBFE1693734F00095CE4 /* libDDiCloudSync.a */; };
+		B4C9EC191693734F00095CE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4C9EC171693734F00095CE4 /* InfoPlist.strings */; };
+		B4C9EC1C1693734F00095CE4 /* DDiCloudSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C9EC1B1693734F00095CE4 /* DDiCloudSyncTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4C9EC111693734F00095CE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59210C8915429021000B17AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4C9EBFD1693734F00095CE4;
+			remoteInfo = DDiCloudSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4C9EBFC1693734F00095CE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B4C9EC041693734F00095CE4 /* DDiCloudSync.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		59210C9615429021000B17AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		59210C9815429021000B17AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		59210C9A15429021000B17AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B4C9EBFE1693734F00095CE4 /* libDDiCloudSync.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDDiCloudSync.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C9EC031693734F00095CE4 /* DDiCloudSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDiCloudSync.h; sourceTree = "<group>"; };
+		B4C9EC051693734F00095CE4 /* DDiCloudSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDiCloudSync.m; sourceTree = "<group>"; };
+		B4C9EC0C1693734F00095CE4 /* DDiCloudSyncTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDiCloudSyncTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C9EC0D1693734F00095CE4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B4C9EC161693734F00095CE4 /* DDiCloudSyncTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DDiCloudSyncTests-Info.plist"; sourceTree = "<group>"; };
+		B4C9EC181693734F00095CE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4C9EC1A1693734F00095CE4 /* DDiCloudSyncTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDiCloudSyncTests.h; sourceTree = "<group>"; };
+		B4C9EC1B1693734F00095CE4 /* DDiCloudSyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDiCloudSyncTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4C9EBFB1693734F00095CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C9EBFF1693734F00095CE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C9EC081693734F00095CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C9EC0E1693734F00095CE4 /* SenTestingKit.framework in Frameworks */,
+				B4C9EC0F1693734F00095CE4 /* UIKit.framework in Frameworks */,
+				B4C9EC101693734F00095CE4 /* Foundation.framework in Frameworks */,
+				B4C9EC131693734F00095CE4 /* libDDiCloudSync.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59210C8715429021000B17AC = {
+			isa = PBXGroup;
+			children = (
+				B4C9EC001693734F00095CE4 /* DDiCloudSync */,
+				B4C9EC141693734F00095CE4 /* DDiCloudSyncTests */,
+				59210C9515429021000B17AC /* Frameworks */,
+				59210C9315429021000B17AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59210C9315429021000B17AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4C9EBFE1693734F00095CE4 /* libDDiCloudSync.a */,
+				B4C9EC0C1693734F00095CE4 /* DDiCloudSyncTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59210C9515429021000B17AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59210C9615429021000B17AC /* UIKit.framework */,
+				59210C9815429021000B17AC /* Foundation.framework */,
+				59210C9A15429021000B17AC /* CoreGraphics.framework */,
+				B4C9EC0D1693734F00095CE4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4C9EC001693734F00095CE4 /* DDiCloudSync */ = {
+			isa = PBXGroup;
+			children = (
+				B4C9EC031693734F00095CE4 /* DDiCloudSync.h */,
+				B4C9EC051693734F00095CE4 /* DDiCloudSync.m */,
+			);
+			path = DDiCloudSync;
+			sourceTree = "<group>";
+		};
+		B4C9EC141693734F00095CE4 /* DDiCloudSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4C9EC1A1693734F00095CE4 /* DDiCloudSyncTests.h */,
+				B4C9EC1B1693734F00095CE4 /* DDiCloudSyncTests.m */,
+				B4C9EC151693734F00095CE4 /* Supporting Files */,
+			);
+			path = DDiCloudSyncTests;
+			sourceTree = "<group>";
+		};
+		B4C9EC151693734F00095CE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4C9EC161693734F00095CE4 /* DDiCloudSyncTests-Info.plist */,
+				B4C9EC171693734F00095CE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4C9EBFD1693734F00095CE4 /* DDiCloudSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C9EC1D1693734F00095CE4 /* Build configuration list for PBXNativeTarget "DDiCloudSync" */;
+			buildPhases = (
+				B4C9EBFA1693734F00095CE4 /* Sources */,
+				B4C9EBFB1693734F00095CE4 /* Frameworks */,
+				B4C9EBFC1693734F00095CE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDiCloudSync;
+			productName = DDiCloudSync;
+			productReference = B4C9EBFE1693734F00095CE4 /* libDDiCloudSync.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B4C9EC0B1693734F00095CE4 /* DDiCloudSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C9EC201693734F00095CE4 /* Build configuration list for PBXNativeTarget "DDiCloudSyncTests" */;
+			buildPhases = (
+				B4C9EC071693734F00095CE4 /* Sources */,
+				B4C9EC081693734F00095CE4 /* Frameworks */,
+				B4C9EC091693734F00095CE4 /* Resources */,
+				B4C9EC0A1693734F00095CE4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4C9EC121693734F00095CE4 /* PBXTargetDependency */,
+			);
+			name = DDiCloudSyncTests;
+			productName = DDiCloudSyncTests;
+			productReference = B4C9EC0C1693734F00095CE4 /* DDiCloudSyncTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59210C8915429021000B17AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WB;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Walt Disney Company";
+			};
+			buildConfigurationList = 59210C8C15429021000B17AC /* Build configuration list for PBXProject "DDiCloudSync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 59210C8715429021000B17AC;
+			productRefGroup = 59210C9315429021000B17AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4C9EBFD1693734F00095CE4 /* DDiCloudSync */,
+				B4C9EC0B1693734F00095CE4 /* DDiCloudSyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4C9EC091693734F00095CE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C9EC191693734F00095CE4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4C9EC0A1693734F00095CE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4C9EBFA1693734F00095CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C9EC061693734F00095CE4 /* DDiCloudSync.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C9EC071693734F00095CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C9EC1C1693734F00095CE4 /* DDiCloudSyncTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4C9EC121693734F00095CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4C9EBFD1693734F00095CE4 /* DDiCloudSync */;
+			targetProxy = B4C9EC111693734F00095CE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4C9EC171693734F00095CE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4C9EC181693734F00095CE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59210CAE15429021000B17AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		59210CAF15429021000B17AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4C9EC1E1693734F00095CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/DDiCloudSync.dst;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4C9EC1F1693734F00095CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/DDiCloudSync.dst;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B4C9EC211693734F00095CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "DDiCloudSyncTests/DDiCloudSyncTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B4C9EC221693734F00095CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "DDiCloudSyncTests/DDiCloudSyncTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59210C8C15429021000B17AC /* Build configuration list for PBXProject "DDiCloudSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59210CAE15429021000B17AC /* Debug */,
+				59210CAF15429021000B17AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C9EC1D1693734F00095CE4 /* Build configuration list for PBXNativeTarget "DDiCloudSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C9EC1E1693734F00095CE4 /* Debug */,
+				B4C9EC1F1693734F00095CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C9EC201693734F00095CE4 /* Build configuration list for PBXNativeTarget "DDiCloudSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C9EC211693734F00095CE4 /* Debug */,
+				B4C9EC221693734F00095CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59210C8915429021000B17AC /* Project object */;
+}

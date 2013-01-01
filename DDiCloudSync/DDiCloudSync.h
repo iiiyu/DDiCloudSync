@@ -1,10 +1,8 @@
 //
-//  MKiCloudSync.h
-//  iCloud1
+//  DDiCloudSync.h
 //
-//  Created by Mugunth Kumar (@mugunthkumar) on 20/11/11.
-//  Copyright (C) 2011-2020 by Steinlogic
-
+//  Created by Dominik R. Pich, based on code by Mugunth Kumar (@mugunthkumar) on 1/1/13.
+//
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
 //  in the Software without restriction, including without limitation the rights
@@ -23,23 +21,23 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-//  As a side note, you might also consider 
-//	1) tweeting about this mentioning @mugunthkumar
-//	2) A paypal donation to mugunth.kumar@gmail.com
-
-#ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#   define DLog(...)
-#endif
-
-// ALog always displays output regardless of the DEBUG setting
-#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-
 #import <Foundation/Foundation.h>
-#define kMKiCloudSyncNotification @"MKiCloudSyncDidUpdateToLatest"
 
-@interface MKiCloudSync : NSObject
+@class DDiCloudSync;
 
-+(void) start;
+@protocol DDiCloudSyncDelegate <NSObject>
+
+- (NSDictionary*)mergedDefaultsForUpdatingCloud:(NSDictionary*)dictInCloud withLocalDefaults:(NSDictionary*)dict;
+- (NSDictionary*)mergedDefaultsForUpdatingLocalDefaults:(NSDictionary*)dict withCloud:(NSDictionary*)dictInCloud;
+
 @end
+@interface DDiCloudSync : NSObject
++ (DDiCloudSync*)sharedSync;
+- (void)start;
+- (void)stop;
+@property(weak) id<DDiCloudSyncDelegate> delegate;
+@property(strong) NSDictionary *lastSyncedDict;
+@end
+
+//notification sent when local defaults changed due to sync
+extern NSString *kDDiCloudDidSyncNotification;
