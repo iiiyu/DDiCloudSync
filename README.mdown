@@ -2,33 +2,29 @@
 A clean and simple class to sync NSUserDefaults to iCloud.
 
 ### How to use?
-1. Drag the two classes and #import the header file in your Application Delegate
-2. Call [MKiCloudSync start];
-3. There is no Step 3.
+1. Drag the two classes from the DDiCloudSync folder into your projecy and #import the header file in your Application Delegate
+2. init the class: `[DDiCloudSync sharedSync]` and set a delegate to handle merging potentially conflicting data from local or from iCloud
+3. Call `[DDiCloudSync start];`	
 
-Read the [blog post](http://blog.mugunthkumar.com/coding/ios-code-mkicloudsync-sync-your-nsuserdefaults-to-icloud-with-a-single-line-of-code) for more
-###License
-//  Copyright (C) 2011-2020 by Steinlogic
+###Example delegate
 
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
+whenever something is about to be sync'd up, this method is called to provide a final dictionary to send
 
-//  As a side note, you might also consider 
-//	1) tweeting about this mentioning @mugunthkumar
-//	2) A paypal donation to mugunth.kumar@gmail.com
-	
+    - (NSDictionary*)mergedDefaultsForUpdatingCloud:(NSDictionary*)dictInCloud withLocalDefaults:(NSDictionary*)dict {
+        NSMutableDictionary *newdict = dict.mutableCopy;
+        newdict[@"merged"] = @"to icloud";
+        return newdict;
+    }
+
+whenever something is about to be sync'd down, this method is called to provide a final dictionary to write to the defaults
+
+
+       - (NSDictionary*)mergedDefaultsForUpdatingLocalDefaults:(NSDictionary*)dict withCloud:(NSDictionary*)dictInCloud {
+        NSMutableDictionary *newdict = dict.mutableCopy;
+        newdict[@"merged"] = @"from icloud";
+        return newdict;
+    }
+
+note: when you dont set a delegate, the class just overwrites the cloud / the local defaults
+
+#####based on original MKiCloudSync code by @mugunthkumar
