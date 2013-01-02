@@ -20,11 +20,13 @@ whenever something is about to be sync'd down, this method is called to provide 
 
 
        - (NSDictionary*)mergedDefaultsForUpdatingLocalDefaults:(NSDictionary*)dict withCloud:(NSDictionary*)dictInCloud {
-        NSMutableDictionary *newdict = dict.mutableCopy;
+        NSMutableDictionary *newdict = dictInCloud.mutableCopy;
         newdict[@"merged"] = @"from icloud";
         return newdict;
     }
 
-note: when you dont set a delegate, the class just overwrites the cloud / the local defaults
+important: this is only a mock-implementation of the delegate. **You need to put custom app-specific logic here for conflict handling**
+	
+*note: when you dont set a delegate, the class just overwrites the cloud / the local defaults*
 
 #####based on original MKiCloudSync code by @mugunthkumar
