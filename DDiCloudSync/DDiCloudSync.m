@@ -115,6 +115,9 @@ NSString *kDDiCloudDidSyncNotification = @"DDiCloudSyncDidUpdateToLatest";
 
 - (void) dealloc {
     [self stop];
+#if !__has_feature(objc_arc)
+    [super dealloc];
+#endif
 }
 
 #pragma mark -

@@ -35,7 +35,11 @@
 + (DDiCloudSync*)sharedSync;
 - (void)start;
 - (void)stop;
+#if !__has_feature(objc_arc)
+@property(assign) id<DDiCloudSyncDelegate> delegate;
+#else
 @property(weak) id<DDiCloudSyncDelegate> delegate;
+#endif
 @property(strong) NSDictionary *lastSyncedDict;
 @end
 
