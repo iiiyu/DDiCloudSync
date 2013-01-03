@@ -1,5 +1,7 @@
 ### What is this?
-A clean and simple class to sync NSUserDefaults to iCloud.
+A clean and simple class to sync NSUserDefaults to iCloud. (WITH a delegate for conflict handling. See this [Stackoverflow question][1]
+
+  [1]: http://stackoverflow.com/questions/14112942/nsuserdefaults-and-icloud/14113064)
 
 ### How to use?
 1. Drag the two classes from the DDiCloudSync folder into your projecy and #import the header file in your Application Delegate
