@@ -97,6 +97,10 @@ NSString *kDDiCloudDidSyncNotification = @"DDiCloudSyncDidUpdateToLatest";
             [[NSNotificationCenter defaultCenter] addObserver:self
                                                      selector:@selector(updateToiCloud:)
                                                          name:NSUserDefaultsDidChangeNotification                                                    object:nil];
+            // start now first sync iCloud because NSUbiquitousKeyValueStoreDidChangeExternallyNotification
+            // no frist time is send
+            [self updateFromiCloud:nil];
+            
 #if TARGET_IPHONE_SIMULATOR
 #else
         } else {
